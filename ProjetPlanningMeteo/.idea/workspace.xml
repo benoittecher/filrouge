@@ -5,25 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a295fea-f00f-47b6-9b45-e2e1aaf78efd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/java/AvoirDroitsCrudPlanningAutreUtilisateurEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/java/AvoirDroitsCrudPlanningAutreUtilisateurEntityPK.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/java/EvenementEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/java/RoleEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/java/StatutCompteEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/java/TypeEvenementEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/java/UtilisateurEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PersistenceManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/AvoirDroitsCrudPlanningAutreUtilisateur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/AvoirDroitsCrudPlanningAutreUtilisateurPK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/StatutCompte.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/TypeEvenement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Utilisateur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/java/AvoirDroitsCrudPlanningAutreUtilisateurEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/java/AvoirDroitsCrudPlanningAutreUtilisateurEntityPK.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/java/EvenementEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Evenement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/java/RoleEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/java/StatutCompteEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/java/TypeEvenementEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/java/UtilisateurEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +38,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -57,13 +57,16 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_directory_selection": "C:/Users/duarte/IdeaProjects/ProjetPlanningMeteo/src/main/java",
+    "last_opened_file_path": "C:/Users/Lisa/POEI/JDBC/JDBC_JPA/exercice",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -72,6 +75,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="entities" />
+    </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="java" />
       <recent name="" />
@@ -86,6 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1668768520725</updated>
       <workItem from="1668768522631" duration="2715000" />
+      <workItem from="1668781395628" duration="5522000" />
     </task>
     <servers />
   </component>
@@ -102,5 +109,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
   </component>
 </project>

@@ -1,37 +1,39 @@
-package java;
+package entities;
 
 import jakarta.persistence.*;
 
-import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "evenement", schema = "plannings_meteo", catalog = "")
-public class EvenementEntity {
+public class Evenement {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "id_evenement", nullable = false)
     private Long idEvenement;
-    @Basic
+
     @Column(name = "intitule", nullable = false, length = 50)
     private String intitule;
-    @Basic
+
     @Column(name = "debut", nullable = false)
-    private Timestamp debut;
-    @Basic
+    private LocalDateTime debut;
+
     @Column(name = "description", nullable = true, length = 255)
     private String description;
-    @Basic
+
     @Column(name = "lieu", nullable = true, length = 150)
     private String lieu;
-    @Basic
+
     @Column(name = "fin", nullable = true)
-    private Timestamp fin;
-    @Basic
-    @Column(name = "id_utilisateur", nullable = false)
-    private Long idUtilisateur;
-    @Basic
-    @Column(name = "id_type_evenement", nullable = false)
-    private Long idTypeEvenement;
+    private LocalDateTime fin;
+
+    @ManyToOne
+    @JoinColumn(name = "id_proprietaire")
+    private Utilisateur utilisateur;
+
+    @ManyToOne
+    @JoinColumn(name = "id_type_evenement")
+    private TypeEvenement typeEvenement;
 
     public Long getIdEvenement() {
         return idEvenement;
@@ -49,11 +51,11 @@ public class EvenementEntity {
         this.intitule = intitule;
     }
 
-    public Timestamp getDebut() {
+    public LocalDateTime getDebut() {
         return debut;
     }
 
-    public void setDebut(Timestamp debut) {
+    public void setDebut(LocalDateTime debut) {
         this.debut = debut;
     }
 
@@ -73,28 +75,28 @@ public class EvenementEntity {
         this.lieu = lieu;
     }
 
-    public Timestamp getFin() {
+    public LocalDateTime getFin() {
         return fin;
     }
 
-    public void setFin(Timestamp fin) {
+    public void setFin(LocalDateTime fin) {
         this.fin = fin;
     }
 
-    public Long getIdUtilisateur() {
-        return idUtilisateur;
+    public Utilisateur getUtilisateur() {
+        return utilisateur;
     }
 
-    public void setIdUtilisateur(Long idUtilisateur) {
-        this.idUtilisateur = idUtilisateur;
+    public void setUtilisateur(Utilisateur utilisateur) {
+        this.utilisateur = utilisateur;
     }
 
-    public Long getIdTypeEvenement() {
-        return idTypeEvenement;
+    public TypeEvenement getTypeEvenement() {
+        return typeEvenement;
     }
 
-    public void setIdTypeEvenement(Long idTypeEvenement) {
-        this.idTypeEvenement = idTypeEvenement;
+    public void setTypeEvenement(TypeEvenement typeEvenement) {
+        this.typeEvenement = typeEvenement;
     }
 
 }

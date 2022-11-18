@@ -4,12 +4,6 @@
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
              version="3.0">
     <persistence-unit name="myPU">
-        <class>java.AvoirDroitsCrudPlanningAutreUtilisateurEntity</class>
-        <class>java.EvenementEntity</class>
-        <class>java.RoleEntity</class>
-        <class>java.StatutCompteEntity</class>
-        <class>java.TypeEvenementEntity</class>
-        <class>java.UtilisateurEntity</class>
         <properties>
             <property name="jaka" value="true"/>
             <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/plannings_meteo?serverTimezone=UTC"/>
@@ -22,10 +16,7 @@
             <!-- update : met à jour le schéma en comparant les entités et le schéma actuel de la base de données -->
             <!-- create : supprime le schéma de la base de données puis utilise les entités pour le recréer -->
             <!-- create-drop : effectue l'option create à la fermeture de l'entityManagerFactory -->
-            <property name="hibernate.hbm2ddl.auto" value="validate"/>
-            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/plannings_meteo"/>
-            <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
-            <property name="hibernate.connection.username" value="root"/>
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
         </properties>
 
     </persistence-unit>
