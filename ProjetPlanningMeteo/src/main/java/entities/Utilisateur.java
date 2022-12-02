@@ -45,6 +45,13 @@ public class Utilisateur {
     @OneToMany (targetEntity = Evenement.class, mappedBy = "utilisateur", cascade = CascadeType.REMOVE)
     private List<Evenement> planning = new ArrayList<>();
 
+    public List<Evenement> getPlanning() {
+        return planning;
+    }
+
+    public void setPlanning(List<Evenement> planning) {
+        this.planning = planning;
+    }
 
     public Long getIdUtilisateur() {
         return idUtilisateur;

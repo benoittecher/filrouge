@@ -5,8 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a295fea-f00f-47b6-9b45-e2e1aaf78efd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../MCD (3).loo" beforeDir="false" afterPath="$PROJECT_DIR$/../MCD (3).loo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/AvoirDroitsCrudPlanningAutreUtilisateurJPADAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/ConnectionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/CrudDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/DAOFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/EvenementJPADAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/RoleJPADAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/StatutCompteJPADAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/TypeEvenementJPADAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/UtilisateurJPADAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Html_Css_Js/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Html_Css_Js/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Html_Css_Js/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Html_Css_Js/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Utilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Utilisateur.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +27,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -40,7 +52,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_directory_selection&quot;: &quot;C:/Users/duarte/IdeaProjects/ProjetPlanningMeteo/src/main/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lisa/POEI/JDBC/JDBC_JPA/exercice&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/duarte/IdeaProjects/JavaSE_JPA_DEMO&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -79,6 +91,11 @@
       <workItem from="1669104745022" duration="22000" />
       <workItem from="1669130078652" duration="703000" />
       <workItem from="1669216218760" duration="457000" />
+      <workItem from="1669393462902" duration="726000" />
+      <workItem from="1669750115063" duration="22000" />
+      <workItem from="1669802088620" duration="109000" />
+      <workItem from="1669897231170" duration="9370000" />
+      <workItem from="1669967083578" duration="1272000" />
     </task>
     <servers />
   </component>
